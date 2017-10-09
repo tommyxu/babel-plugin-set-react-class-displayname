@@ -2,7 +2,7 @@
 
 Babel plugin that injects class-name as `displayName` property.
 
-NOTE:
+Disclaimer:
 
 This project directly introduces the code from following git repositories:
 
@@ -12,8 +12,8 @@ This project directly introduces the code from following git repositories:
 
 ## What it does
 
-1. Detect the class declaration or class expression which has render() method (considering it as React.Component)
-2. Apply "displayName" class property on it
+1. Detect the class declaration or class expression which has render() method (considering it as `React.Component`)
+2. Add `displayName` class property (static property) on it.
 
 
 ## Install:
