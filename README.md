@@ -1,6 +1,6 @@
 # babel-plugin-set-react-class-displayname
 
-Babel plugin that injects class' name as `displayName` property.
+Babel plugin that injects class-name as `displayName` property.
 
 NOTE:
 
@@ -30,24 +30,27 @@ or
 
 ## Usage:
 
-via `.babelrc`
+via `.babelrc` or `webpack`
 
 ```
 {
-   "plugins": ["transform-react-class-displayname"],
+   "plugins": ["set-react-class-displayname"],
 }
 ```
 
 via `cli`
 
 ```
-babel --plugins transform-react-class-displayname script.js
+babel --plugins set-react-class-displayname script.js
 ```
 
 Note:
 
 If You want to use this plugin with `es2015` preset, you need to install [transform class properties plugin](https://babeljs.io/docs/plugins/transform-class-properties/)
 
+```
+plugins: ['transform-class-properties']
+```
 
 ## Example:
 
