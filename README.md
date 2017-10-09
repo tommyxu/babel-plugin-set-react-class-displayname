@@ -1,16 +1,31 @@
-# babel-plugin-transform-react-class-displayname
+# babel-plugin-set-react-class-displayname
+
 Babel plugin that injects class' name as `displayName` property.
+
+NOTE:
+
+This project directly introduces the code from following git repositories:
+
+* Krizzu/babel-plugin-transform-react-class-displayname
+* opbeat/babel-plugin-add-react-displayname
+
+
+## What it does
+
+1. Detect the class declaration or class expression which has render() method (considering it as React.Component)
+2. Apply "displayName" class property on it
+
 
 ## Install:
 
 ```
-  npm i -D babel-plugin-transform-react-class-displayname
+  npm i -D babel-plugin-set-react-class-displayname
 ```
 
 or
 
 ```
-  yarn add --dev babel-plugin-transform-react-class-displayname
+  yarn add --dev babel-plugin-set-react-class-displayname
 ```
 
 ## Usage:
@@ -39,12 +54,17 @@ If You want to use this plugin with `es2015` preset, you need to install [transf
 In:
 
 ```
-  const component = class Class1 {
+  const component = class Class1 extends React.Component {
+    render() {
+      // ...
+    }
 
   };
 
-  class Class2 {
-   
+  class Class2 extends React.Component {
+    render() {
+      // ...
+    }
   }
 ```
 
@@ -59,4 +79,3 @@ Out:
     static displayName = "Class2";
   }
 ```
-
