@@ -1,7 +1,6 @@
 # babel-plugin-set-react-class-displayname
 
-Babel plugin that injects class-name as `displayName` property.
-
+Babel plugin that adds class name as static property `displayName`.
 
 ## Disclaimer:
 
@@ -21,13 +20,13 @@ Nothing else.
 ## Install:
 
 ```
-  npm i -D babel-plugin-set-react-class-displayname
+npm i -D babel-plugin-set-react-class-displayname
 ```
 
 or
 
 ```
-  yarn add --dev babel-plugin-set-react-class-displayname
+yarn add --dev babel-plugin-set-react-class-displayname
 ```
 
 ## Usage:
@@ -59,28 +58,28 @@ plugins: ['transform-class-properties']
 In:
 
 ```
-  const component = class Class1 extends React.Component {
-    render() {
-      // ...
-    }
-
-  };
-
-  class Class2 extends React.Component {
-    render() {
-      // ...
-    }
+const component = class Class1 extends React.Component {
+  render() {
+    // ...
   }
+
+};
+
+class Class2 extends React.Component {
+  render() {
+    // ...
+  }
+}
 ```
 
 Out:
 
 ```
-  const component = class Class1 {
-    static displayName = "Class1";
-  };
+const component = class Class1 {
+  static displayName = "Class1";
+};
 
-  class Class2 {
-    static displayName = "Class2";
-  }
+class Class2 {
+  static displayName = "Class2";
+}
 ```
