@@ -1,6 +1,6 @@
 {
-  "name": "babel-plugin-transform-react-class-displayname",
-  "version": "1.0.1",
+  "name": "babel-plugin-set-react-class-displayname",
+  "version": "1.0.0",
   "description": "Babel plugin that adds class' name as static property `displayName`",
   "main": "src/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Krizzu/babel-plugin-transform-react-class-displayname.git"
+    "url": "git+https://github.com/tommyxu/babel-plugin-transform-react-class-displayname.git"
   },
   "keywords": [
     "babel-plugin",
@@ -22,15 +22,11 @@
     "class",
     "static displayname"
   ],
-  "author": "Krzysztof 'Krizzu' Borowy <krzysztoff.borowy@gmail.com>",
+  "author": "Xu Yijun <xuyijun@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Krizzu/babel-plugin-transform-react-class-displayname/issues"
-  },
-  "homepage": "https://github.com/Krizzu/babel-plugin-transform-react-class-displayname#readme",
+  "homepage": "https://github.com/tommyxu/babel-plugin-transform-react-class-displayname",
   "devDependencies": {
     "babel-core": "^6.25.0",
-    "babel-preset-es2015": "^6.24.1",
-    "jest": "^20.0.4"
+    "babel-preset-es2015": "^6.24.1"
   }
 }
