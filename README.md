@@ -22,6 +22,7 @@ Nothing else.
 1.0.2 
 Accept a merge request to support anonymous class (`const A = class extends Component { ... }`). The displayName is set to `AnonymousClass`. Here's the original comment from the contributor:
 > I personally find useful AnonymousClass as a hint rather than no displayName which then gets mangled when minifying the source. 
+
 1.0.3
 Update doc to the latest.
 
