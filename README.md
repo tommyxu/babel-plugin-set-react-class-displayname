@@ -17,6 +17,11 @@ This project directly introduces the code from following git repositories:
 
 Nothing else.
 
+## Updates
+
+1.0.2 Accept a merge request to support anonymous class (`const A = class extends Component { ...}`). Here's the original comment from the contributor:
+" I personally find useful AnonymousClass as a hint rather than no displayName which then gets mangled when minifying the source. "
+
 ## Install:
 
 ```
