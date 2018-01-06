@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-set-react-class-displayname",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Babel plugin that adds class name as static property `displayName`",
   "main": "src/index.js",
   "scripts": {
