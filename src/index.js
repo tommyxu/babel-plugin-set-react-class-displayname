@@ -47,11 +47,11 @@ module.exports = function myPlugin({ types: t }) {
   const classVisitor = {
     ClassDeclaration(path) {
       const pathBody = path.get('body');
-      visitorClassBody(pathBody, path.node.id.name);
+      visitorClassBody(pathBody, path.node.id != null ? path.node.id.name : 'AnonymousClass');
     },
     ClassExpression(path) {
       const pathBody = path.get('body');
-      visitorClassBody(pathBody, path.node.id.name);
+      visitorClassBody(pathBody, path.node.id != null ? path.node.id.name : 'AnonymousClass');
     },
   };
 
